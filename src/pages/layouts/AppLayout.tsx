@@ -1,15 +1,18 @@
 import { Outlet } from "react-router";
 import "./AppLayout.scss";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 
 //* PAGE: AppLayout
 export default function AppLayout() {
   // output
   return (
-    <>
-      <header>header here</header>
-      <main>
-        <Outlet />
-      </main>
-    </>
+    <main>
+      <Header />
+
+      <Outlet />
+
+      <Footer />
+    </main>
   );
 }

@@ -22,6 +22,8 @@ export default function App() {
         { path: "about", element: <AboutPage /> },
         { path: "locations", element: <LocationsPage /> },
         { path: "contact", element: <ContactPage /> },
+        // Error Output
+        { path: "*", element: <h1>Oops there was an error</h1> },
       ],
     },
   ]);
