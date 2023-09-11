@@ -7,10 +7,12 @@ import Footer from "../../components/footer/Footer";
 export default function AppLayout() {
   // output
   return (
-    <main>
+    <main className="app-layout">
       <Header />
 
-      <Outlet />
+      <div className="app-layout__outlet">
+        <Outlet />
+      </div>
 
       <Footer />
     </main>
