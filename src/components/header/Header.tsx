@@ -3,15 +3,18 @@ import { useState } from "react";
 
 import "./Header.scss";
 
-import logo from "../../assets/shared/desktop/logo-dark.png";
-import hamburger from "../../assets/shared/mobile/icon-hamburger.svg";
-import iconClose from "../../assets/shared/mobile/icon-close.svg";
+// import logo from "../../assets/shared/desktop/logo-dark.png";
+// import hamburger from "../../assets/shared/mobile/icon-hamburger.svg";
+// import iconClose from "../../assets/shared/mobile/icon-close.svg";
 import MainNavBar from "../navbar/MainNavBar";
 import Logo from "../ui/Logo";
 
 //* COMPONENT: Header
 export default function Header() {
   const [isToggleMenu, setIsToggleMenu] = useState(false);
+
+  const hamburger = "assets/shared/mobile/icon-hamburger.svg";
+  const iconClose = "assets/shared/mobile/icon-close.svg";
 
   // output
   return (

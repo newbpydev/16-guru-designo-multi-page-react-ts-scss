@@ -31,6 +31,13 @@
       align-items: center;
       gap: 4rem;
     }
+
+    & .footer__social-group {
+      display: flex;
+      width: 18.4rem;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
 }
