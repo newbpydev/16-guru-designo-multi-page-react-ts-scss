@@ -11,6 +11,7 @@
 
   /* ------------------------------ Border Radius ----------------------------- */
   --border-radius: 15px;
+  --border-radius-button: 8px;
 }
 
 html {
@@ -56,7 +57,15 @@ h3 {
   text-transform: uppercase;
 }
 
-.container {
+.center {
   margin: 0 auto;
-  padding: 0 2.4rem;
+}
+
+.container-pad {
+  padding: 0rem 2.4rem;
+
+}
+
+.container-mar {
+  margin: 0rem 2.4rem;
 }

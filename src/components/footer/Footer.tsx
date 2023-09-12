@@ -1,3 +1,4 @@
+import ContactCard from "../cards/ContactCard";
 import MainNavBar from "../navbar/MainNavBar";
 import ContactInfo from "../ui/ContactInfo";
 import Logo from "../ui/Logo";
@@ -8,14 +9,18 @@ export default function Footer() {
   // output
   return (
     <footer className="footer">
-      <div className="footer__contact-us">get_in_touch</div>
+      <div className="footer__upper-group container-mar">
+        <div className="footer__contact-us">
+          <ContactCard />
+        </div>
 
-      <div className="footer__group">
         <Logo isDarkMode />
+      </div>
 
+      <div className="footer__lower-group">
         <MainNavBar isFooter />
 
-        <div className="footer__contact-info">
+        <div className="footer__contact-group">
           <ContactInfo isDarkMode>
             <ContactInfo.Heading>Designo Central Office</ContactInfo.Heading>
             <ContactInfo.Text>3886 Wellington Street</ContactInfo.Text>

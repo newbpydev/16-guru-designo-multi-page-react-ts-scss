@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  background-color: var(--primary-white);
+  padding: 1.7rem 1.9rem;
+  border-radius: var(--border-radius-button);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transition: all .2s ease-out;
+
+  &:hover {
+    background-color: var(--secondary-light-peach);
+    color: var(--primary-white);
+  }
+}
