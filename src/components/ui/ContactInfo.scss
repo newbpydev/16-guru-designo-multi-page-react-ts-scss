@@ -1,11 +1,11 @@
 .contact-info {
   font-size: 1.5rem;
 
-  & .dark-mode {
-    color: var(--primary-white);
-    opacity: 0.5;
+  &.dark-mode {
+    color: rgb(255, 255, 255, 0.5);
     font-size: 1.6rem;
   }
+
   &__heading {
     font-weight: 700;
   }

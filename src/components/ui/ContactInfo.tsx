@@ -3,11 +3,11 @@ import "./ContactInfo.scss";
 
 type Props = {
   children: ReactNode;
-  isDarkMode: boolean;
+  isDarkMode?: boolean;
 };
 
 //* COMPONENT: ContactInfo
-export default function ContactInfo({ children, isDarkMode }: Props) {
+export default function ContactInfo({ children, isDarkMode = false }: Props) {
   // output
   return (
     <div className={`contact-info ${isDarkMode && "dark-mode"}`}>
