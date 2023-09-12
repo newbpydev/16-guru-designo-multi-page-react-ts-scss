@@ -2,6 +2,7 @@ import ContactCard from "../cards/ContactCard";
 import MainNavBar from "../navbar/MainNavBar";
 import ContactInfo from "../ui/ContactInfo";
 import Logo from "../ui/Logo";
+import SocialLink from "../ui/SocialLink";
 import "./Footer.scss";
 
 //* COMPONENT: Footer
@@ -9,7 +10,7 @@ export default function Footer() {
   // output
   return (
     <footer className="footer">
-      <div className="footer__upper-group container-mar">
+      <div className="footer__upper-group ">
         <div className="footer__contact-us">
           <ContactCard />
         </div>
@@ -36,7 +37,13 @@ export default function Footer() {
           </ContactInfo>
         </div>
 
-        <div className="footer__social-group">social</div>
+        <div className="footer__social-group">
+          <SocialLink media="facebook" />
+          <SocialLink media="youtube" />
+          <SocialLink media="twitter" />
+          <SocialLink media="pinterest" />
+          <SocialLink media="instagram" />
+        </div>
       </div>
     </footer>
   );

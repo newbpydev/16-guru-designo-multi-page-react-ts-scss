@@ -1,5 +1,6 @@
 .footer {
   background-color: var(--primary-black);
+  padding: 0rem 2.4rem 6.4rem;
 
   &__upper-group {
     position: relative;
@@ -9,7 +10,8 @@
 
     & .footer__contact-us {
       position: absolute;
-      top: 0rem;
+      top: -18rem;
+
     }
 
 

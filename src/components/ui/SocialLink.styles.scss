@@ -1,0 +1,9 @@
+.social-link {
+
+  &>svg>path {
+
+    &:hover {
+      fill: var(--secondary-light-peach);
+    }
+  }
+}

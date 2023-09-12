@@ -3,5 +3,5 @@ import "./HomePage.scss";
 //* PAGE: HomePage
 export default function HomePage() {
   // output
-  return <main>HomePage</main>;
+  return <main className="home-page">HomePage</main>;
 }
