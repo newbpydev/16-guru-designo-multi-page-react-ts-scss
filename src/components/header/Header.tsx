@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 import "./Header.scss";
@@ -7,6 +7,7 @@ import logo from "../../assets/shared/desktop/logo-dark.png";
 import hamburger from "../../assets/shared/mobile/icon-hamburger.svg";
 import iconClose from "../../assets/shared/mobile/icon-close.svg";
 import MainNavBar from "../navbar/MainNavBar";
+import Logo from "../ui/Logo";
 
 //* COMPONENT: Header
 export default function Header() {
@@ -15,9 +16,15 @@ export default function Header() {
   // output
   return (
     <header className="header">
-      <NavLink to="/" className="header__logo-link">
-        <img className="header__logo" src={logo} alt="Designo Logo" />
-      </NavLink>
+      <Logo isDarkMode={false} onClick={() => setIsToggleMenu(false)} />
+      {/* <NavLink to="/" className="header__logo-link">
+        <img
+          className="header__logo"
+          src={logo}
+          alt="Designo Logo"
+          onClick={() => setIsToggleMenu(() => false)}
+        />
+      </NavLink> */}
 
       <div className="header__navigation">
         {isToggleMenu ? (
@@ -32,7 +39,7 @@ export default function Header() {
               className="header__nav-wrapper"
               onClick={() => setIsToggleMenu((prev) => !prev)}
             >
-              <MainNavBar />
+              <MainNavBar isFooter={false} />
             </div>
           </>
         ) : (

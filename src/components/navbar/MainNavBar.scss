@@ -17,3 +17,24 @@
     text-transform: uppercase;
   }
 }
+
+.navbar-footer {
+  background-color: var(--primary-black);
+
+  padding: 3.2rem 2.4rem 4rem;
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.2rem;
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    color: var(--primary-white);
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
