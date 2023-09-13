@@ -1,0 +1,21 @@
+.home-feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    background: url('assets/shared/desktop/bg-pattern-small-circle.svg');
+    margin-bottom: 4.8rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  &__title {}
+}

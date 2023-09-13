@@ -13,5 +13,9 @@
     // margin: 12rem 2.4rem;
   }
 
-  &__features {}
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
 }
