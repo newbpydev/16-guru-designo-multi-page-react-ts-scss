@@ -1,0 +1,35 @@
+.home-hero-card {
+  position: relative;
+  background-color: var(--primary-peach);
+  background-image: url('assets/home/desktop/bg-pattern-hero-home.svg');
+  background-position-y: 10rem;
+  background-repeat: no-repeat;
+  padding: 8rem 2.4rem 45rem;
+  overflow-y: hidden;
+
+  &__cta-details {
+
+
+    & .home-hero-card__title {
+      margin-bottom: 1.4rem;
+    }
+
+    & .home-hero-card__detail {
+      color: var(--primary-white);
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+
+  &__img {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    bottom: -10rem;
+    transform: translateX(-50%); // display: block;
+    overflow: scroll;
+    width: 28.4rem;
+  }
+}
