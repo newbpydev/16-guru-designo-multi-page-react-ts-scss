@@ -1,3 +1,4 @@
+import HomeFeatureCard from "../components/cards/HomeFeatureCard";
 import HomeHeroCard from "../components/cards/HomeHeroCard";
 import ProjectLinkCard from "../components/cards/ProjectLinkCard";
 import "./HomePage.scss";
@@ -28,7 +29,9 @@ export default function HomePage() {
         </ProjectLinkCard>
       </section>
 
-      <section className="home-page__features container-mar">features</section>
+      <section className="home-page__features container-mar">
+        <HomeFeatureCard></HomeFeatureCard>
+      </section>
     </main>
   );
 }

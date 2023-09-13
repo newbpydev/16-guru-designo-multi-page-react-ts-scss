@@ -1,5 +1,5 @@
 // import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./Header.scss";
 
@@ -15,6 +15,14 @@ export default function Header() {
 
   const hamburger = "assets/shared/mobile/icon-hamburger.svg";
   const iconClose = "assets/shared/mobile/icon-close.svg";
+
+  useEffect(() => {
+    if (isToggleMenu) document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isToggleMenu]);
 
   // output
   return (

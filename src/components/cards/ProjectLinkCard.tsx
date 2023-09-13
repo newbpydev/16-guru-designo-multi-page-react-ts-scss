@@ -15,20 +15,9 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 //* COMPONENT: ProjectLinkCard
 export default function ProjectLinkCard({ to, children, ...rest }: Props) {
-  let image: string;
-
-  switch (to) {
-    case "web-design":
-      image = "";
-      break;
-
-    default:
-      image = "";
-  }
-
   // output
   return (
-    <Link to={to} className="project-link-card" data-bg={to}>
+    <Link to={to} className="project-link-card" data-bg={to} {...rest}>
       <div className="project-link-card__wrapper">{children}</div>
     </Link>
   );
