@@ -1,0 +1,66 @@
+/* The component style is inserted here. */
+.project-link-card {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  display: block;
+  border-radius: var(--border-radius-button);
+  background-color: rgba(0, 0, 0, .2);
+
+  &[data-bg='web-design'] {
+    background: url('assets/home/mobile/image-web-design.jpg');
+  }
+
+  &[data-bg='web-design-large'] {
+    background-image: url('assets/home/desktop/image-web-design-large.jpg');
+  }
+
+  &[data-bg='app-design'] {
+    background-image: url('assets/home/mobile/image-app-design.jpg');
+  }
+
+  &[data-bg='graphic-design'] {
+    background-image: url('assets/home/mobile/image-graphic-design.jpg');
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    border-radius: inherit;
+
+    padding: 9rem 0;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    transition: all .2s ease-in;
+
+    &:hover {
+      background-color: rgba(231, 129, 107, .7);
+    }
+  }
+
+
+
+  &__title {}
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+
+    &>svg {
+      display: inline-block;
+      // height: 8px;
+      width: 5px;
+    }
+
+  }
+}

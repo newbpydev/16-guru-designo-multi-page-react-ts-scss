@@ -7,6 +7,9 @@
   &__hero {}
 
   &__projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
     // margin: 12rem 2.4rem;
   }
 
