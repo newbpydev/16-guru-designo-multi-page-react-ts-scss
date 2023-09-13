@@ -5,9 +5,11 @@
   background-position-y: 10rem;
   background-repeat: no-repeat;
   padding: 8rem 2.4rem 45rem;
-  overflow-y: hidden;
+  overflow: hidden;
 
   &__cta-details {
+    position: relative;
+    z-index: 1;
 
 
     & .home-hero-card__title {
@@ -25,11 +27,16 @@
 
   &__img {
     position: absolute;
-    display: inline-block;
+    display: block;
     left: 50%;
-    bottom: -10rem;
+    bottom: -37rem;
     transform: translateX(-50%); // display: block;
     overflow: scroll;
-    width: 28.4rem;
+    max-inline-size: none;
+    max-block-size: none;
+
+    width: 62rem;
+    height: auto;
+    z-index: 0;
   }
 }
