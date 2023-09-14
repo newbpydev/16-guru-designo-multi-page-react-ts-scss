@@ -1,3 +1,4 @@
+import { useLocation } from "react-router";
 import ContactCard from "../cards/ContactCard";
 import MainNavBar from "../navbar/MainNavBar";
 import ContactInfo from "../ui/ContactInfo";
@@ -7,13 +8,21 @@ import "./Footer.scss";
 
 //* COMPONENT: Footer
 export default function Footer() {
+  const location = useLocation();
+  const isContactPage = location.pathname === "/contact";
+
   // output
   return (
     <footer className="footer">
-      <div className="footer__upper-group ">
-        <div className="footer__contact-us">
-          <ContactCard />
-        </div>
+      <div
+        className="footer__upper-group"
+        style={isContactPage ? { paddingTop: "6.4rem" } : {}}
+      >
+        {!isContactPage && (
+          <div className="footer__contact-us">
+            <ContactCard />
+          </div>
+        )}
 
         <Logo isDarkMode />
       </div>
