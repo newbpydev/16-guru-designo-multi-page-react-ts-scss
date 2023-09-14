@@ -30,7 +30,7 @@ function Title({ children }: ChildrenProps) {
 }
 
 function Description({ children }: ChildrenProps) {
-  return <p className="home-feature-card__title">{children}</p>;
+  return <p className="home-feature-card__description">{children}</p>;
 }
 
 HomeFeatureCard.Title = Title;
