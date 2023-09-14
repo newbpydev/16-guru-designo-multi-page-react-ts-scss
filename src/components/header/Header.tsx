@@ -13,8 +13,8 @@ import Logo from "../ui/Logo";
 export default function Header() {
   const [isToggleMenu, setIsToggleMenu] = useState(false);
 
-  const hamburger = "assets/shared/mobile/icon-hamburger.svg";
-  const iconClose = "assets/shared/mobile/icon-close.svg";
+  const hamburger = "/assets/shared/mobile/icon-hamburger.svg";
+  const iconClose = "/assets/shared/mobile/icon-close.svg";
 
   useEffect(() => {
     if (isToggleMenu) document.body.style.overflow = "hidden";

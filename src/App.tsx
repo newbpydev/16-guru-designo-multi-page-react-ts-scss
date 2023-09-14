@@ -1,4 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import WebDesignPage from "./pages/WebDesignPage";
 import AppDesignPage from "./pages/AppDesignPage";
@@ -16,9 +20,18 @@ export default function App() {
       element: <AppLayout />,
       children: [
         { path: "", element: <HomePage /> },
-        { path: "web-design", element: <WebDesignPage /> },
-        { path: "app-design", element: <AppDesignPage /> },
-        { path: "graphic-design", element: <GraphicDesignPage /> },
+        {
+          path: "designs",
+          element: <Navigate to={"/designs/web-design"} replace />,
+          children: [
+            { path: "web-design", element: <WebDesignPage /> },
+            { path: "app-design", element: <AppDesignPage /> },
+            { path: "graphic-design", element: <GraphicDesignPage /> },
+          ],
+        },
+        // { path: "web-design", element: <WebDesignPage /> },
+        // { path: "app-design", element: <AppDesignPage /> },
+        // { path: "graphic-design", element: <GraphicDesignPage /> },
         { path: "about", element: <AboutPage /> },
         { path: "locations", element: <LocationsPage /> },
         { path: "contact", element: <ContactPage /> },

@@ -11,8 +11,8 @@ interface Props extends HTMLAttributes<HTMLAnchorElement> {
 
 //* COMPONENT: Logo
 export default function Logo({ isDarkMode, ...rest }: Props) {
-  const lightLogo = "assets/shared/desktop/logo-light.png";
-  const darkLogo = "assets/shared/desktop/logo-dark.png";
+  const lightLogo = "/assets/shared/desktop/logo-light.png";
+  const darkLogo = "/assets/shared/desktop/logo-dark.png";
 
   // output
   return (

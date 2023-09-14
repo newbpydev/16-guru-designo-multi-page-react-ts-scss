@@ -15,7 +15,7 @@ export default function HomeFeatureCard({ children, feature }: Props) {
   return (
     <article className="home-feature-card">
       <img
-        src={`assets/home/desktop/illustration-${feature}.svg`}
+        src={`/assets/home/desktop/illustration-${feature}.svg`}
         alt={`illustration of ${feature}`}
         className="home-feature-card__image"
       />

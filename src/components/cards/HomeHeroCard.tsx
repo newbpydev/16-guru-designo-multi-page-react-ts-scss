@@ -16,11 +16,11 @@ export default function HomeHeroCard() {
           Find out more about our services.
         </p>
 
-        <Button to="/contact">Learn More</Button>
+        <Button to="/about">Learn More</Button>
       </div>
 
       <img
-        src="assets/home/desktop/image-hero-phone.png"
+        src="/assets/home/desktop/image-hero-phone.png"
         alt="image of a phone"
         className="home-hero-card__img"
       />

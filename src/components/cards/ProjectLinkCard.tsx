@@ -2,7 +2,7 @@ import { AnchorHTMLAttributes, ReactNode } from "react";
 import "./ProjectLinkCard.scss";
 import { Link } from "react-router-dom";
 
-import rightArrow from "/assets/shared/desktop/icon-right-arrow.svg";
+// import rightArrow from "/assets/shared/desktop/icon-right-arrow.svg";
 
 interface ChildrenProps {
   children?: ReactNode;
@@ -17,7 +17,12 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 export default function ProjectLinkCard({ to, children, ...rest }: Props) {
   // output
   return (
-    <Link to={to} className="project-link-card" data-bg={to} {...rest}>
+    <Link
+      to={`/designs/${to}`}
+      className="project-link-card"
+      data-bg={to}
+      {...rest}
+    >
       <div className="project-link-card__wrapper">{children}</div>
     </Link>
   );
